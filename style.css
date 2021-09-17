@@ -15,60 +15,11 @@ body {
   margin: 0 auto;
   background: hsl(211,6%,92%);
 }
-@media only screen and (min-width:421px){
-.container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /*grid-template-rows: 1fr 1fr;*/
-  grid-template-areas:
-    "daniel   daniel   jonathan kira"
-    "jeanette patrick  patrick  kira";
-  gap: 30px;
-  width: 70%;
-  /* border:solid 2px blue; */
-  margin: 100px auto;
-  }
-  .daniel {
-  grid-area: daniel;
-  background: url(./images/bg-pattern-quotation.svg), var(--Moderate-violet);
-  background-repeat: no-repeat;
-  background-size: 50px;
-  color: var(--White);
-}
-.jonathan {
-  grid-area: jonathan;
-  background: var(--Very-dark-grayish-blue);
-  color: var(--White);
-}
-.kira {
-  grid-area: kira;
-  background: var(--White);
-}
-.jeanette {
-  grid-area: jeanette;
-  background: var(--White);
-}
-.patrick {
-  grid-area: patrick;
-  background: var(--Very-dark-blackish-blue);
-  color: var(--White);
-}
- }
-@media only screen and (max-width:420px){
-  .container{
-    display:grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-  width: 70%;
-  /* border:solid 2px blue; */
-  margin: 50px auto;
-  }
-}
 
 .card {
   padding: 30px;
   border-radius: 10px;
-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);
 }
 .person{
     display: flex;
@@ -109,3 +60,96 @@ div {
   background: var(--Very-dark-blackish-blue);
   color: var(--White);
 }
+@media only screen and (min-width:577px){
+
+.container {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  /*grid-template-rows: 1fr 1fr;*/
+
+  grid-template-areas:
+
+    "daniel   daniel   jonathan kira"
+
+    "jeanette patrick  patrick  kira";
+
+  gap: 30px;
+
+  width: 70%;
+
+  /* border:solid 2px blue; */
+
+  margin: 100px auto;
+
+  }
+
+  .daniel {
+
+  grid-area: daniel;
+
+
+
+
+}
+
+.jonathan {
+
+  grid-area: jonathan;
+
+
+
+
+
+}
+
+.kira {
+
+  grid-area: kira;
+
+
+
+}
+
+.jeanette {
+
+  grid-area: jeanette;
+
+
+
+}
+
+.patrick {
+
+  grid-area: patrick;
+
+
+
+
+
+}
+
+ }
+
+@media only screen and (max-width:576px){
+
+  .container{
+
+    display:grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+  width: 70%;
+
+  /* border:solid 2px blue; */
+
+  margin: 50px auto;
+
+  }
+
+}
+
