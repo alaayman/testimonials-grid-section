@@ -6,12 +6,16 @@
   --Very-dark-blackish-blue: hsl(219, 29%, 14%);
   --White: hsl(0, 0%, 100%);
 }
-
+html,body{
+  height:100%;
+  width:100%;
+}
 body {
   box-sizing: border-box;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 13px;
   min-height: 100vh;
+  min-width:100%;
   margin: 0 auto;
   background: hsl(211,6%,92%);
 }
@@ -82,7 +86,7 @@ div {
 
   /* border:solid 2px blue; */
 
-  margin: 100px auto;
+  margin: auto auto;
 
   }
 
@@ -147,7 +151,7 @@ div {
 
   /* border:solid 2px blue; */
 
-  margin: 50px auto;
+  margin: auto auto;
 
   }
 
