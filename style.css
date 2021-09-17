@@ -28,6 +28,31 @@ body {
   /* border:solid 2px blue; */
   margin: 100px auto;
   }
+  .daniel {
+  grid-area: daniel;
+  background: url(./images/bg-pattern-quotation.svg), var(--Moderate-violet);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  color: var(--White);
+}
+.jonathan {
+  grid-area: jonathan;
+  background: var(--Very-dark-grayish-blue);
+  color: var(--White);
+}
+.kira {
+  grid-area: kira;
+  background: var(--White);
+}
+.jeanette {
+  grid-area: jeanette;
+  background: var(--White);
+}
+.patrick {
+  grid-area: patrick;
+  background: var(--Very-dark-blackish-blue);
+  color: var(--White);
+}
  }
 @media only screen and (max-width:420px){
   .container{
@@ -60,27 +85,27 @@ div {
 }
 
 .daniel {
-  grid-area: daniel;
+ 
   background: url(./images/bg-pattern-quotation.svg), var(--Moderate-violet);
   background-repeat: no-repeat;
   background-size: 50px;
   color: var(--White);
 }
 .jonathan {
-  grid-area: jonathan;
+ 
   background: var(--Very-dark-grayish-blue);
   color: var(--White);
 }
 .kira {
-  grid-area: kira;
+ 
   background: var(--White);
 }
 .jeanette {
-  grid-area: jeanette;
+ 
   background: var(--White);
 }
 .patrick {
-  grid-area: patrick;
+ 
   background: var(--Very-dark-blackish-blue);
   color: var(--White);
 }
