@@ -29,7 +29,7 @@ body {
 }
 @media only screen and (max-width:420px){
   .container{
-    grid-template-column: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
