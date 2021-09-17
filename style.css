@@ -11,14 +11,14 @@ body {
   box-sizing: border-box;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 13px;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   background: hsl(211,6%,92%);
 }
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr;*/
   grid-template-areas:
     "daniel   daniel   jonathan kira"
     "jeanette patrick  patrick  kira";
@@ -26,6 +26,11 @@ body {
   width: 70%;
   /* border:solid 2px blue; */
   margin: 100px auto;
+}
+@media only screen and (max-width:420px){
+  .container{
+    grid-template-column: 1fr;
+  }
 }
 
 .card {
