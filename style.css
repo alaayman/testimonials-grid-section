@@ -11,32 +11,45 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 13px;
-  line-height: 1.4rem;
-  /* min-height: 100vh; */
+  line-height: 1.3rem;
   min-width: 100%;
-  margin: 0 auto;
+  position: relative;
   background: hsl(211, 6%, 92%);
 }
 .card {
-  padding: 24px;
+  padding: 36px;
   border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.4);
 }
 .person {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
-.head {
+.person img {
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid ; */
+  box-shadow: 0 0 2px 1px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 16px;
 }
-div {
-  /* border:solid crimson 2px; */
+.person .status {
+  filter: opacity(50%);
+}
+.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  margin-bottom: 14px;
+}
+.testemony {
+  font-size: 13px;
+  font-weight: 500;
+  filter: opacity(70%);
 }
 .daniel {
   background: url(./images/bg-pattern-quotation.svg), var(--Moderate-violet);
@@ -60,21 +73,8 @@ div {
   background: var(--Very-dark-blackish-blue);
   color: var(--White);
 }
-.status{
-  filter: opacity(50%);
-}
-.title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-.testemony {
-  font-size: 0.9rem;
-  font-weight: 500;
-  filter:opacity(70%) ;
-}
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 993px) {
   .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -82,11 +82,8 @@ div {
     grid-template-areas:
       "daniel   daniel   jonathan kira"
       "jeanette patrick  patrick  kira";
-
     gap: 20px;
-    /* width: 75%; */
     max-width: 1110px;
-    /* border:solid 2px blue; */
     margin: 50px auto;
   }
 
@@ -111,7 +108,7 @@ div {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
